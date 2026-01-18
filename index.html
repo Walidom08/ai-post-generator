@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Blog & Social Media Post Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>AI Content Generator</h1>
+
+    <input id="topic" type="text" placeholder="Topic">
+    <input id="platform" type="text" placeholder="Platform (Blog, Twitter, LinkedIn)">
+    <input id="style" type="text" placeholder="Style (Professional, Casual)">
+    <input id="keyword" type="text" placeholder="Keyword (optional)">
+
+    <label>
+      <input type="checkbox" id="hashtags">
+      Include hashtags & emojis
+    </label>
+
+    <label>
+      <input type="checkbox" id="cta">
+      Include Call To Action
+    </label>
+
+    <button onclick="generateContent()">Generate</button>
+
+    <pre id="output"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
